@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>SES Events</title>
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <style type="text/css">
+      .button {
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 3px 2px;
+        cursor: pointer;
+      }
+      
+      .button1 {background-color: darkorange;}
+            #pic {
+                  border-radius: 50%;
+               }
+      
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:rgba(0,0,0,0.4);
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+.countdown-container{
+  display:flex;
+}
+.big-text{
+  font-size:4rem;
+}
+.title{
+  display: inline-block;
+  min-width: 120px;
+  margin: 15px;
+  height: 110px;
+  padding: 20px;
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: #fff;
+  text-align: center;
+  font-weight: 400;
+  color: #212121;
+  font-size: 16px;
+  font-family: Proxima Nova;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+.title span{
+  font-size: 45px;
+  font-family: Proxima Nova;
+  line-height: 45px;
+  font-weight: 700;
+  display: block;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap: wrap;
+  min-height:80%;
+}
+.countdown-container > div{
+  margin:0 2rem;
+  text-align: center;
+  border:4px solid #555;
+  padding:15px 15px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  color:#555;
+  min-width:30%;
+  min-height:100%
+}
+@media (max-width:992px){
+  .countdown-container > div{
+    margin:0 1rem;
+  }
+}
+@media (max-width:767px){
+  .countdown-container{
+    flex-wrap: wrap;
+  }
+  .countdown-container > div{
+    margin:1rem auto;
+    max-width:150px;
+  }
+  .title{
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin:10px 0px;
+  }
+  .title span{
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+}
+
+      </style>
+
+
+  </head>
+  <body>
+
+
+
+
+    <nav class="navbar1">
+      
+      <div class="right1">
+          <ul class="list1">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="schedules.html">schedules</a></li>
+          <li><a href="story.html">SES Story</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="heros.html">Unsung hero's</a></li>
+          <li><a href="details.html">Event Details</a></li>
+          <li><a href="flow.html">Event Flow</a></li>
+          <li><a href="sponsors.html">Sponsers</a></li>
+          <li><a href="register.html">Register</a></li>
+          </ul>
+      </div>
+      <div class="mobile1" onclick="fun()">
+          <ion-icon name="menu" class="menu"></ion-icon>
+          <ion-icon name="close" class="menu"></ion-icon>
+      </div>
+  
+<script>
+  function fun(){
+    var mob_nav = document.querySelector(".navbar1");
+    mob_nav.classList.toggle("active");
+}
+</script>
+
+</nav>
+
+    <!-- Header Area wrapper Starts -->
+<!------    <header id="header-wrap">   ---->
+    <!-- Navbar Start -->
+    <!----    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+      <div class="container">                                                      ---->
+        <!-- Brand and toggle get grouped for better mobile display -->   
+
+ <!----       <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" style="color: white;"><b class="furniture_text2">
+                  Home</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" style="color: white;"><b class="furniture_text2">
+                  About</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedules.html" style="color: white;"><b class="furniture_text2">
+                  schedules</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="story.html" style="color: white;"><b class="furniture_text2">
+                  SES Story</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html" style="color: white;"><b class="furniture_text2">
+                  Gallery</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="heros.html" style="color: white;"><b class="furniture_text2">
+                  Unsung Hero's</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="details.html" style="color: white;"><b class="furniture_text2">
+                  Event Details</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="flow.html" style="color: black;"><b class="furniture_text2">
+                  Event Flow</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sponsors.html" style="color: black;"><b class="furniture_text2">
+                  Sponsors</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><b class="furniture_text2">
+                  Contact</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html"><b class="furniture_text2">
+                  Register</b>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile" onclick="fun()">
+        <ion-icon name="menu" class="menu"></ion-icon>
+        <ion-icon name="close" class="menu"></ion-icon>
+    </div>
+
+
+    ----->
+      <!-- Mobile Menu Start -->
+ <!----     <ul class="mobile-menu">
+        <li>
+          <a class="page-scrool" href="index.html" style="color: black;">Home</a>
+        </li>
+        <li>
+          <a class="page-scrool" href="about.html">About</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="schedules.html">schedules</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="story.html">SES Story</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="gallery.html">Gallery</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="heros.html">Unsung Hero's</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="details.html">Event Details</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="flow.html"> Event Flow</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="sponsors.html">Sponsors</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="contact.html">Contact</a>
+        </li>
+      </ul>         
+    -->
+      <!-- Mobile Menu End -->
+
+    
+    <!-- Navbar End -->
+
+      <!-- Main Carousel Section Start -->
+      <div id="main-slide" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+          <li data-target="#main-slide" data-slide-to="1"></li>
+          <li data-target="#main-slide" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/img/slider/slide-1.jpg" alt="First slide" style="-webkit-filter: brightness(20%);
+            filter:brightness(20%); height: 500%;">
+            <div class="carousel-caption d-md-block">
+              
+              <h1 class="wow fadeInDown heading" data-wow-delay=".4s">SWARASTRA EKTA SANGAMAM</h1>
+              <p class="fadeInUp wow" data-wow-delay=".6s">Sachi Events is a Hyderabad-based Event Management Company catering to all
+                kinds of needs regarding both Private cum Corporate Events.</p>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/slider/slide-2.jpg" alt="Second slide" style="-webkit-filter: brightness(20%);
+            filter:brightness(30%); height: 500%;">
+            <div class="carousel-caption d-md-block">
+              
+              <h1 class="wow bounceIn heading" data-wow-delay=".7s">SWARASTRA EKTA SANGAMAM</h1>
+              <p class="fadeInUp wow" data-wow-delay=".6s">Sachi Events proudly presents 'Swarastra Ekta Sangamam' or 'SES,' a grand tribute
+                to India's 75th Republic Day.
+                </p>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/slider/slide-3.jpg" alt="Third slide" style="-webkit-filter: brightness(20%);
+            filter:brightness(30%); height: 500%;">
+            <div class="carousel-caption d-md-block">
+              
+              <h1 class="wow fadeInUp heading" data-wow-delay=".6s">SWARASTRA EKTA SANGAMAM</h1>
+              <p class="fadeInUp wow" data-wow-delay=".6s">It is a historic event like no other, a unique celebration that resonates across the
+                heart of every Indian.
+                </p>
+              
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#main-slide" role="button" data-slide="prev">
+          <span class="carousel-control" aria-hidden="true"><i class="lni-chevron-left"></i></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#main-slide" role="button" data-slide="next">
+          <span class="carousel-control" aria-hidden="true"><i class="lni-chevron-right"></i></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Main Carousel Section End -->
+
+
+    <!-- Header Area wrapper End -->
+
+    <!-- Coundown Section Start -->
+    <section class="countdown-timer section-padding" style="background: #f1efef;">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="heading-count">
+              <h2 class="wow fadeInDown" data-wow-delay="0.2s">Event Will Start In</h2>
+            </div>
+          </div>
+ <div class="overlay"></div>
+ <div class="wrapper">
+     <div class="countdown-container">
+       <div>
+         <p id="days" class="big-text">60</p><br>
+         <span>Days</span>
+       </div>
+       <div>
+        <p id="hours" class="big-text">0</p><br>
+        <span>Hours</span>
+      </div>
+      <div>
+        <p id="min" class="big-text">00</p><br>
+        <span>Min</span>
+      </div>
+      <div>
+        <p id="sec" class="big-text">00</p><br>
+        <span>Sec</span>
+      </div>
+     </div>
+   </div>
+ </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+            <a href="pricing.html" class="button button1" data-wow-delay="0.3s">Add to My Calender</a>
+          </div>
+        </div>
+
+    </section>
+    <!-- Coundown Section End -->
+
+     <!--services section start--->
+    <!-- Services Section End -->
+    
+
+    <!-- About Section Start -->
+    <!-- About Section End -->
+
+    <!-- Counter Area Start-->
+    <!-- Counter Area End-->
+
+    <!-- Schedule Section Start -->
+    
+    <!-- Schedule Section End -->
+
+    <!-- Team Section Start -->
+    <!-- Team Section End -->
+
+    <!-- Gallary Section Start -->
+    <!-- Gallary Section End -->
+
+    <!-- Ask Question Section Start -->
+    <!-- Ask Question Section End -->
+
+     <!-- Event Slides Section Start -->
+     <section id="event-slides" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">A Unique Celebration</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s"></p>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
+            <p class="intro-desc">The uniqueness of Swarastra Ekta Sangamam is celebrating the 75th Republic Day
+              for consecutive 75 Days across 75 Cities. <br><br>
+              As India recently celebrated 75 years of independence with the Azadi ka Amrit
+              Mahotsav, SES seizes the moment to honor and celebrate it.
+            </p>
+            <h2 class="intro-title" style="line-height: 30px;"><img src="assets/img/left.png" style="width: 38px; margin-top: 0;" > &nbsp;SES- A movement that transcends borders and unites us all.</i></h2>
+            <p class="intro-desc">It symbolizes our journey toward freedom, reminding us of the enduring spirit that
+              defines our nation.</p>
+            
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
+            <div class="video">
+              
+              <video autoplay muted src="images/logo.mp4" style="width: 70%; height: 70%; margin-left: 50px;">
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Event Slides Section End -->
+
+
+
+    <!-- Ticket Pricing Area Start -->
+    <section id="pricing" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">75 Days, 75 Cities</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s"><a style="font-size: 18px">Swarastra Ekta Sangamam is not merely an event; it's a symbol of our collective
+                pride, our shared history, and our hopes for a brighter future.</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-xa-12 mb-3">
+            <div class="price-block-wrapper wow fadeInLeft" data-wow-delay="0.2s">
+              
+              <div class="colmun-title">
+                <h5 style="padding: 28px;  border: 1px solid darkorange; font-style: italic; background: transparent;
+                line-height: 39px;
+             
+             z-index:-1;
+             outline: 1px solid #c1a0aa; box-shadow: 1px 1px  rgb(185, 179, 179);
+             outline-offset: 4px ;"><br>In an unprecedented endeavor, SES will unfold over 75 days, spanning 75 diverse
+                  cities across the Indian subcontinent.<br><br></h5>
+              </div>
+              <div class="price">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-xa-12 mb-3">
+            <div class="price-block-wrapper wow fadeInUp" data-wow-delay="0.3s" >
+              
+              <div class="colmun-title">
+                
+              </div>
+              <div class="price" >
+                <h2 style="border:4px solid darkgreen; font-size: 22px; outline: 1px solid darkgreen;
+                outline-offset: 8px ; padding: 8px; line-height: 38px; ">Join us on this unique journey to celebrate India's 75th Republic Day and the rich
+                  tapestry of our heritage.<br><br>
+                  <a href="register.html" class="button button1" style="outline: 2px solid darkorange;
+                  outline-offset: 2px ; margin-bottom: 15px;">Register</a></h2>
+              </div>
+              
+              
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-xa-12 mb-3">
+            <div class="price-block-wrapper wow fadeInLeft" data-wow-delay="0.2s">
+              
+              <div class="colmun-title">
+                <h5 style="padding: 28px;  border: 1px solid darkorange; font-style: italic; background: transparent;
+                line-height: 39px;
+             
+             z-index:-1;
+             outline: 1px solid #c1a0aa; box-shadow: 1px 1px  rgb(185, 179, 179);
+             outline-offset: 4px ;"><br>These 75 days will serve as a testament to the
+                          resilience, unity, and diversity that define our great nation.<br><br></h5>
+              </div>
+              <div class="price">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- Ticket Pricing Area End -->
+
+   
+     <!-- Sponsors Section Start -->
+    <!-- Sponsors Section End -->
+
+    <!-- Blog Section Start -->
+    <!-- Blog Section End -->
+
+    <!-- Subscribe Area Start -->
+    <!-- Subscribe Area End -->
+
+    <!-- Map Section Start -->
+    <!-- Map Section End -->
+
+    <!-- Contact Us Section -->
+    <!-- Contact Us Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
+          <h3><img src="images/logo2.png" id="pic" alt="Avatar" style="width:50px"></h3>
+          <p>
+            For Every Occasion, We add A Touch of Marvel.
+            Transforming ordinary moments into extraordinary memories.
+
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="schedules.html">Event Shedule</a></li>
+            <li><a href="gallery.html">Event Photo Gallery</a></li>
+            <li><a href="details.html">Event Details</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+          <h3>CONTACT US</h3>
+          <ul>
+            <li>
+              <div class="post-content">
+                <p class="lorem_text" style="align-items: center;">Reach us <a href="https://sachieventsindia.com/"><b>sachieventsindia.com</b></a><br>
+                 email-id:
+              <b>hello@shachimedia.com</b></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.8s">
+          <h3>SUBSCRIBE US</h3>
+          <div class="widget">
+            <div class="newsletter-wrapper">
+              <form method="post" id="subscribe-form" name="subscribe-form" class="validate">
+                <div class="form-group is-empty">
+                  <input type="email" value="" name="Email" class="form-control" id="EMAIL" placeholder="Your email"
+                    required="">
+                  <button type="submit" name="subscribe" id="subscribes" class="btn btn-common sub-btn"><i
+                      class="lni-pointer"></i></button>
+                  <div class="clearfix"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h5 class="widget-title">FOLLOW US ON</h5>
+            <ul class="footer-social">
+              <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
+              <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a></li>
+              <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <div id="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="site-info">
+            <p>2023 All Rights Reserved, By Sachi Events</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Go to Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="lni-chevron-up"></i>
+  </a>
+
+  <div id="preloader">
+    <div class="sk-circle">
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <div class="sk-circle4 sk-child"></div>
+      <div class="sk-circle5 sk-child"></div>
+      <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+      <div class="sk-circle8 sk-child"></div>
+      <div class="sk-circle9 sk-child"></div>
+      <div class="sk-circle10 sk-child"></div>
+      <div class="sk-circle11 sk-child"></div>
+      <div class="sk-circle12 sk-child"></div>
+    </div>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery-min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/jquery.slicknav.js"></script>
+  <script src="assets/js/nivo-lightbox.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+  
+ let daysItem = document.querySelector("#days");
+ let hoursItem = document.querySelector("#hours");
+ let minItem = document.querySelector("#min");
+ let secItem = document.querySelector("#sec");
+
+
+ let countDown = () => {
+   let futureDate = new Date("08 dec 2023");
+   let currentDate = new Date();
+   let myDate = futureDate - currentDate;
+   //console.log(myDate);
+
+   let days = Math.floor(myDate / 1000 / 60 / 60 / 24);
+
+   let hours = Math.floor(myDate / 1000 / 60 / 60) % 24;
+
+   let min = Math.floor(myDate / 1000 / 60) % 60;
+
+   let sec = Math.floor(myDate / 1000) % 60;
+
+   daysItem.innerHTML = days;
+   hoursItem.innerHTML = hours;
+   minItem.innerHTML = min;
+   secItem.innerHTML = sec;
+ }
+
+ countDown()
+
+ setInterval(countDown, 1000)
+
+
+
+  </script>
+</body>
+
+</html>

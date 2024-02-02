@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: url(assets/img/about/flag.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-right: 0;
+}
+
+.img-fluid {
+    width: 480px;
+    height: 320px;
+}
+
+.second-line {
+    padding-top: 40px;
+}
+
+.section-title {
+    color: #fff;
+}
+
+.side-heading {
+    color: #fff;
+}
+
+.try-colors {
+    background-image: linear-gradient(right red, green, orange);
+}
+
+.about-text h3 a {
+    color: #046A38;
+}
+
+.about-container {
+    /* background-color: #fff; */
+    width: 100%;
+    min-height: 390px;
+    /* text-align: center; */
+    position: relative;
+    cursor: pointer;
+    box-shadow: none;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.about-container:hover {
+    box-shadow: none;
+}
+
+.about-sub-container {
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 80px;
+    z-index: 1;
+    box-shadow: 0 0 20px -15px black;
+    transition: transform .7s;
+    bottom: -40px;
+}
+
+.shadow1 {
+    height: 200px;
+    width: 80%;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -40px;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px black;
+    transition: transform .7s;
+}
+
+.shadow2 {
+    height: 100px;
+    width: 65%;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -35px;
+    background-color: white;
+    left: 18%;
+    z-index: -2;
+}
+
+.about-container:hover .about-sub-container {
+    transform: translateY(-50px);
+}
+
+.about-container:hover .shadow1 {
+    transform: translateY(-30px);
+}
+
+
+.about-img {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 10px solid orange;
+    background: #fff;
+    object-fit: contain;
+}
+.about-sub-container h3 a{
+    font-size: 18px;
+    font-family: Proxima Nova;
+    color:#046A38;
+}
+.about-sub-container p{
+    font-size: 13px;
+     font-family: Proxima Nova;
+    line-height: 1.5;
+}
+/* .about-bg{
+    background: url(assets/img/about/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */

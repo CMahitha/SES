@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Grand - Event and Conference Template</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: darkorange;}
+        #comment{
+            border: 4px solid orange;
+         }
+         #pic {
+            border-radius: 50%;
+         }
+</style>
+
+
+  </head>
+  <body>
+
+    <nav class="navbar1">
+      
+      <div class="right1">
+          <ul class="list1">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="schedules.html">schedules</a></li>
+          <li><a href="story.html">SES Story</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="heros.html">Unsung hero's</a></li>
+          <li><a href="details.html">Event Details</a></li>
+          <li><a href="flow.html">Event Flow</a></li>
+          <li><a href="sponsors.html">Sponsers</a></li>
+          <li><a href="register.html">Register</a></li>
+          </ul>
+      </div>
+      <div class="mobile1" onclick="fun()">
+          <ion-icon name="menu" class="menu"></ion-icon>
+          <ion-icon name="close" class="menu"></ion-icon>
+      </div>
+  
+<script>
+  function fun(){
+    var mob_nav = document.querySelector(".navbar1");
+    mob_nav.classList.toggle("active");
+}
+</script>
+
+</nav>
+    <!-- Header Area wrapper End -->
+    <!-- Subscribe Area Start -->
+    <div id="subscribe" class="section-padding">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-6">
+            <div class="subscribe-inner wow fadeInDown" data-wow-delay="0.3s">
+              <h2 class="subscribe-title">Register Here</h2>
+              <form class="text-center form-inline"  method="POST" action="" id="contactform" name="contactform">
+                <label>First Name</label>
+                <input class="mb-20 form-control" type="text" name="FirstName" placeholder="Enter Your First Name Here" id="comment" style="margin-bottom: 3%" required ><br>
+                <label>Last Name</label>
+                <input class="mb-20 form-control" name="LastName" placeholder="Enter Your Last Name Here" id="comment" style="margin-bottom: 3%" type="text"><br>
+                <label>Age(12 to 35 only)</label>
+                <input class="mb-20 form-control" name="Age" placeholder="*Age 12 to 35 only*" required="Age 12 to 35 only" id="comment" style="margin-bottom: 3%" type="text"><br>
+                <label>Aadhaar Number</label>
+                <input class="mb-20 form-control" type="text" name="AadharNumber" placeholder="Enter Your Aadhar number Here" id="comment" style="margin-bottom: 3%" required ><br><br>
+                <label>Contact Number</label>
+                <input class="mb-20 form-control" type="text" name="ContactNumber" placeholder="Enter Your contact number Here" id="comment" style="margin-bottom: 3%" required><br><br>
+                <label for="to_participate">To participate in</label>
+                <select class="mb-20 form-control" name="to_participate" id="comment" style="margin-bottom: 3%">
+                                      <option value="select">Select</option>
+                                      <option value="Classicalmusic">Classical music </option>
+                                      <option value="Westernmusic">Western music</option>
+                                      <option value="Classicaldance">Classical dance</option>
+                                      <option value="Westerndance">Western dance </option>
+                                      <option value="fightersact">Freedom fighters act</option>
+                                      <option value="mime">Mime</option>
+                                      <option value="hiddentalent">Hidden talent</option>
+                                      <option value="others">Others</option>
+                                    </select><br><br>
+                <label for="group_performance">Group performance</label>
+                <select class="mb-20 form-control" name="group_performance" id="comment" style="margin-bottom: 3%">
+                                      <option value="select">Select</option>
+                                      <option value="1-3">1-3</option>
+                                      <option value="1-6">1-6</option>
+                              </select>
+                              <br><br>
+                <label>Solo Performance</label>
+                <input class="mb-20 form-control" name="soloperformance" placeholder="Enter Your name Here" id="comment" style="margin-bottom: 3%" type="text"><br><br>
+                <label> Your City  </label>
+                <input class="mb-20 form-control" type="text" name="city" placeholder="Enter Your city Here" id="comment" style="margin-bottom: 3%" required><br><br>
+                <label> Your State</label><br>
+                <input class="mb-20 form-control" type="text" name="state" placeholder="Enter Your state Here" id="comment" style="margin-bottom: 3%" required><br><br>
+                <button ><input type="submit"></button>
+              </form>
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="subscribe-inner wow fadeInDown" data-wow-delay="0.3s">
+                  <div class="image_1"><img src="images/logo2.png" width="600" height="600" style="padding-top: 70px;"></div>
+               </div>
+               <div class="text-center">
+            <p><br><br>
+            <h2 class="lorem_text">At Sachi Events, we pledge to infuse our essence into every event we embrace.</h2>
+            <h5 class="lorem_text">For Every Occasion, We add A Touch of Marvel.</h5><br>
+            <b class="lorem_text">Transforming ordinary moments into extraordinary memories.</b>
+            <p class="lorem_text">We are happy to serve the event and make it the best.</p>
+            </p>
+            </p>
+          </div>
+
+
+             </div>
+        </div>
+      </div>
+    </div>
+    <!-- Subscribe Area End -->
+
+    
+
+    <!-- Footer Section Start -->
+    <footer class="footer-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
+          <h3><img src="images/logo2.png" id="pic" alt="Avatar" style="width:50px"></h3>
+          <p>
+            For Every Occasion, We add A Touch of Marvel.
+            Transforming ordinary moments into extraordinary memories.
+
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="schedules.html">Event Shedule</a></li>
+            <li><a href="gallery.html">Event Photo Gallery</a></li>
+            <li><a href="details.html">Event Details</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+          <h3>CONTACT US</h3>
+          <ul>
+            <li>
+              <div class="post-content">
+                <p class="lorem_text" style="align-items: center;">Reach us <a href="https://sachieventsindia.com/"><b>sachieventsindia.com</b></a><br>
+                 email-id:
+              <b>hello@shachimedia.com</b></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.8s">
+          <h3>SUBSCRIBE US</h3>
+          <div class="widget">
+            <div class="newsletter-wrapper">
+              <form method="post" id="subscribe-form" name="subscribe-form" class="validate">
+                <div class="form-group is-empty">
+                  <input type="email" value="" name="Email" class="form-control" id="EMAIL" placeholder="Your email"
+                    required="">
+                  <button type="submit" name="subscribe" id="subscribes" class="btn btn-common sub-btn"><i
+                      class="lni-pointer"></i></button>
+                  <div class="clearfix"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h5 class="widget-title">FOLLOW US ON</h5>
+            <ul class="footer-social">
+              <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
+              <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a></li>
+              <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <div id="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="site-info">
+            <p>2023 All Rights Reserved, By Sachi Events</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Go to Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="lni-chevron-up"></i>
+  </a>
+
+  <div id="preloader">
+    <div class="sk-circle">
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <div class="sk-circle4 sk-child"></div>
+      <div class="sk-circle5 sk-child"></div>
+      <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+      <div class="sk-circle8 sk-child"></div>
+      <div class="sk-circle9 sk-child"></div>
+      <div class="sk-circle10 sk-child"></div>
+      <div class="sk-circle11 sk-child"></div>
+      <div class="sk-circle12 sk-child"></div>
+    </div>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery-min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/jquery.slicknav.js"></script>
+  <script src="assets/js/nivo-lightbox.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbyNvB8JMSTSLOWQk23qyIk-oPNQW0X504Nw-79jUvPdwxfTqS1Ij0e6qNzD2RhrE9rvww/exec'
+         const form = document.forms['contactform']
+        
+         form.addEventListener('submit', e => {
+           e.preventDefault()
+           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+         })
+        </script>
+</body>
+
+</html>
